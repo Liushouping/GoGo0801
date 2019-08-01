@@ -1,0 +1,214 @@
+@import url(//fonts.googleapis.com/earlyaccess/notosanstc.css);
+
+* {
+  margin:0;
+  padding:0;
+  font-family: "Noto Sans TC","微軟正黑體", Arial, sans-serif; 
+}
+
+img { 
+  max-width: 100%; 
+  height:auto;
+}
+
+body {
+  -webkit-font-smoothing:antialiased; 
+  -webkit-text-size-adjust:none; 
+  width: 100%!important; 
+  height: 100%;
+}
+
+a{
+  text-decoration: none;
+}
+
+table{
+  table-layout : fixed; width:100%;
+}
+
+.info td{
+  border-bottom: 1px dotted rgb(200,200,200);
+}
+
+.footer{
+  background-color: rgb(239,238,243);
+  max-width:100%;
+}
+
+.footer_table  table{
+  text-align:center;
+  margin: 0 auto;
+}
+
+.footer_icon{
+  max-width: 150px;
+  text-align: center;
+  display: inline;
+}
+
+
+.slogan{
+  margin:45px 0 40px 0;  
+}
+
+
+
+.content{
+  padding: 15px;
+  max-width: 600px;
+  margin: 0 auto;
+  display: block;
+  clear: both;
+}
+
+.title_container{
+  line-height: 2.5em;
+  font-weight: 900;
+  text-align: center;
+  border-top:1px dashed #777;
+  padding-top: 10px;
+
+}
+
+.title_container_name{
+  color: rgb(51,51,51);
+  font-size: 24px;
+}
+
+.title_container_travel{
+  color: rgb(255,164,0);
+  font-size: 20px;
+}
+
+.title_container_number{
+  color: rgb(46,177,231);
+  font-size: 18px;
+}
+
+.title_container_foryou{
+  max-width: 600px;
+  padding: 5px;
+  margin: 20px auto 0px auto;
+  text-align: center;
+  font-size: 18px;
+  background-color: rgb(246,245,244);
+}
+
+.hotel_img_info_img{
+  display:inline;
+}
+
+.hotel_img_info_img img{
+  margin:10px;
+  vertical-align:middle;
+}
+
+.hotel_img_info{
+  display:inline-block;
+  vertical-align:middle;
+  font-size:16px;
+  font-weight: 900;
+  margin:10px 10px 10px 10px;
+}
+
+@media only screen and (max-width: 1300px) {
+  .hotel_img_info_img img{
+    width: 100%;
+    margin:10px 0;
+  }
+  
+  .hotel_img_info{
+    font-size:20px;
+    font-weight: 900;
+    margin:10px 10px 10px 30px;
+  }
+
+  .title_container_foryou{
+  font-size: 16px;
+  }
+}
+
+
+  .order_info_td_left{
+    width:35%;
+    padding:10px 10px;
+  }
+
+  .order_info_td_right{
+    width:65%;
+    text-align: right;
+    padding-right:10px;
+  }
+
+.map_btn{
+  background-color:rgb(255,164,0);
+  text-align:center;
+  margin:30px 0;
+  padding:10px 0;
+  font-size:18px;
+  font-weight:900;
+  color:white;
+  letter-spacing: 2px; 
+}
+
+.pay_info{
+  background-color:rgb(239,238,243);
+  padding:10px;
+}
+
+.pay_info_title{
+  text-align:center;
+  font-weight:900;
+  font-size:22px;
+}
+
+.pay_info_td_left{
+  max-width:50%;
+  padding:10px 10px;
+}
+
+.pay_info_td_center{
+  width:20%;
+  text-align: right;
+  padding-right:10px;
+}
+
+.pay_info_td_right{
+  width:30%;
+  text-align: right;
+  padding-right:10px;
+}
+
+
+.pay_info_total{
+  margin:10px 10px 10px 0;
+  text-align:right;
+  font-weight:900;
+  font-size:20px;
+}
+
+.emind{
+  letter-spacing:2px;
+  line-height:1.5em;
+  margin-top:5px;
+  font-weight:900;
+  color:#777;
+}
+
+@media only screen and (max-width: 415px) {
+  .title_container_name{
+    font-size:20px;
+  }
+  
+  .title_container_travel{
+    font-size:20px;
+  }
+
+  .title_container_number{
+    font-size:18px;
+  }
+  
+  .footer_table table td {
+    font-size:13px;
+  } 
+}

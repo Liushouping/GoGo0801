@@ -1,0 +1,107 @@
+			/*luggage*/
+			#namea{
+/*				-webkit-transform-origin: 200px 345px;
+						transform-origin: 200px 345px;*/
+				-webkit-animation: luggage 3s infinite linear;
+						animation: luggage 3s infinite linear;
+			}
+
+			@keyframes luggage {
+				0% {
+					-webkit-transform: translateX(0px,0px);
+							transform: translateX(0px,0px);
+							opacity:0;
+				}	
+				5% {
+					-webkit-transform: translateX(0px,0px);
+							transform: translateX(0px,0px);
+							opacity:0;
+				}	
+				20% {
+					-webkit-transform: translateX(0px,0px);
+							transform: translateX(0px,0px);
+							opacity:1;
+				}
+				30% {
+					-webkit-transform: translateX(0px,0px);
+							transform: translateX(0px,0px);
+							opacity:1;
+				}
+				60% {
+					-webkit-transform: translateX(50px);
+							transform: translateX(50px);
+							opacity:0;
+				}
+				100% {
+					-webkit-transform: translateX(0px,0px);
+							transform: translateX(0px,0px);
+							opacity:0;
+				}
+			}
+			/*logo*/
+			#nameg {
+			  -webkit-transform-origin: 200px 178px;
+			          transform-origin: 200px 178px;
+			  -webkit-animation: logo 2s infinite;
+			          animation: logo 2s infinite;
+			}
+			@keyframes logo {
+			  0% {
+			    -webkit-transform: rotate(0deg);
+			            transform: rotate(0deg);
+			  }
+			  80% {
+			    -webkit-transform: rotate(0deg);
+			            transform: rotate(0deg);
+			  }
+			  85% {
+			    -webkit-transform: rotate(10deg);
+			            transform: rotate(10deg);
+			  }
+			  90% {
+			    -webkit-transform: rotate(-6deg);
+			            transform: rotate(-6deg);
+			  }
+			  95% {
+			    -webkit-transform: rotate(3deg);
+			            transform: rotate(3deg);
+			  }
+			  100% {
+			    -webkit-transform: rotate(0deg);
+			            transform: rotate(0deg);
+			  }
+			}
+			/*text*/
+			#nametext {
+			  -webkit-transform-origin: 70px 178px;
+			          transform-origin: 70px 178px;
+			  -webkit-animation: logotext 3s infinite;
+			          animation: logotext 3s infinite;
+			}
+
+			@keyframes logotext {
+			  0% {
+			    -webkit-transform: rotate(0deg);
+			            transform: rotate(0deg);
+			  }
+			  80% {
+			    -webkit-transform: rotate(0deg);
+			            transform: rotate(0deg);
+			  }
+			  85% {
+			    -webkit-transform: rotate(5deg);
+			            transform: rotate(5deg);
+			  }
+			  90% {
+			    -webkit-transform: rotate(0deg);
+			            transform: rotate(0deg);
+			  }
+			  95% {
+			    -webkit-transform: rotate(3deg);
+			            transform: rotate(3deg);
+			  }
+			  100% {
+			    -webkit-transform: rotate(0deg);
+			            transform: rotate(0deg);
+			  }
+			}
