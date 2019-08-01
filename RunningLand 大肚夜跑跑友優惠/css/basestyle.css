@@ -1,0 +1,415 @@
+@import url(https://fonts.googleapis.com/earlyaccess/notosanstc.css);
+/**{
+  border:1px solid black;
+} */
+html,body{
+  box-sizing: border-box;
+  overflow-x: hidden;
+  font-family: 'Noto Sans TC','微軟正黑體';
+  font-size: 0.95em;
+  font-weight: normal;
+  color: #fff;
+  letter-spacing: 0.5px;
+}
+h1{
+  font-weight: 900 !important;
+  font-family: 'Noto Sans TC','微軟正黑體' !important;
+}
+h2{
+  font-weight: 700 !important;
+  font-family: 'Noto Sans TC','微軟正黑體' !important;
+}
+h3{
+  font-weight: bold !important;
+  line-height: 1.5em;
+  font-size: 20px;
+  font-family: 'Noto Sans TC','微軟正黑體' !important;
+}
+h4{
+  font-weight: 300 !important;
+  line-height: 1.5em;
+  font-size: 18px;
+  font-family: 'Noto Sans TC','微軟正黑體' !important;
+}
+h5{
+  font-weight: 300 !important;
+  font-size: 1em;
+  font-family: 'Noto Sans TC','微軟正黑體' !important;
+}
+button:focus{
+  outline:none !important;
+}
+a,a:hover{
+  font-family: 'Noto Sans TC','微軟正黑體' !important;
+  color: inherit;
+  text-decoration:none;
+}
+.tripmatchlogo img{
+  position: absolute;
+  left: 35%;
+  top: 20%;
+  width: 525px;
+  height: 575px;
+  text-align: center;
+  display: inline-block;
+}
+.container{
+  width: 95% !important;
+}
+.col-sm-12,.col-md-6{
+  padding-right: 0px !important;
+  padding-left: 0px !important;
+}
+.noto500{
+  font-weight: 400 !important;
+}
+/*nav*/
+.navbar{
+  padding: 0px 20px !important;
+}
+.navbar-light .navbar-toggler{
+  border: 0 !important;
+  padding: 0 !important;
+}
+.bg-0{
+  background: 0 !important;
+}
+.bg-1{
+  background: #FEC10C !important;
+}
+.text-shoadow{
+  text-shadow: 1px 1px 1px #777;
+}
+.nav-link:hover::after{
+  margin: auto 5px;
+  font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f3c5";
+}
+/*img-bag*/
+.topview_1 {
+  position: relative;
+  background-image: url('https://firebasestorage.googleapis.com/v0/b/tripmatchwebsite.appspot.com/o/img%2Ftripmatch_bottom.png?alt=media&token=37deb39e-1fcd-41ff-adca-df3f0fc5868e');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top center;
+  width: 100%;
+  height: 1020px;
+}
+.scrolldown{
+  position: absolute;
+  left: 50%;
+  top: 85%;
+  width: 50px;
+  height: 50px;
+  animation: scrolltwo 3s linear infinite;
+}
+@keyframes scrolltwo {
+    0% {transform: translateY(0);opacity: 1}
+    100% {transform: translateY(35%);opacity: 0}
+}
+/**/
+footer{
+  position: relative;
+  background: #FEC10C;
+  width: 100%;
+  text-align: center;
+}
+#scrolltop{
+  display: none;
+  position: fixed;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  line-height: 40px;
+  margin: 5px 1px;
+  overflow: hidden;
+  bottom: 30px;
+  right: 20px;
+  text-align: center;
+  z-index: 9999;
+  border: none;
+  outline: none;
+  background-color: #43B64B;
+  color: #fff;
+  cursor: pointer;
+}
+/* owl */
+.owl-dots{
+  text-align: center !important;
+}
+.owl-carousel button.owl-dot{
+  width: 10px !important;
+  height: 10px !important;
+  margin: 5px 7px !important;
+  background: #FEC10C !important;
+  display: inline-flex !important;
+  border-radius: 30px !important;
+}
+.owl-carousel button.owl-dot:active{
+  opacity: 0.7;
+}
+.owl-carousel .owl-item img{
+  width: 85% !important;
+}
+button.owl-dot.active{
+  opacity: 0.7;
+}
+@media only screen and (min-width: 2539px){
+  div.tripmatchlogo img{
+    left: 39%;
+    top: 14%;
+  }
+  .scrolldown{
+    top: 82%;
+  }
+}
+@media only screen and (max-width: 1681px){
+  div.tripmatchlogo img{
+    left: 33%;
+  }
+  .scrolldown{
+    top: 82%;
+  }
+}
+@media only screen and (max-width: 1635px){
+  .topview_1 {
+    background-image: url(https://firebasestorage.googleapis.com/v0/b/tripmatchwebsite.appspot.com/o/img%2Ftripmatch_bottom.png?alt=media&token=37deb39e-1fcd-41ff-adca-df3f0fc5868e);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: top center;
+    width: 100%;
+    height: 97vh;
+  }
+  div.tripmatchlogo img{
+    left: 21%;
+    top: 20%;
+  }
+}
+@media only screen and (max-width: 1440px){
+  div.tripmatchlogo img{
+    left: 30%;
+    top: 15%;
+  }
+}
+@media only screen and (max-width: 1024px){
+  div.tripmatchlogo img{
+    left: 23%;
+    top: 7%;
+  }
+  .scrolldown{
+    top: 82%;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .navbar-nav{
+    text-align: center !important;
+  }
+  .dropdown-menu.show{
+    text-align: center !important;
+  }
+  div.tripmatchlogo img{
+    left: 13%;
+    top: 5%;
+  }
+}
+
+/*navbar-icon3*/
+#nav-icon3{
+  width: 45px;
+  height: 5px;
+  position: relative;
+  margin: -10px -20px;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .5s ease-in-out;
+  -moz-transition: .5s ease-in-out;
+  -o-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  cursor: pointer;
+}
+
+#nav-icon3 span{
+  display: block;
+  position: absolute;
+  height: 3px;
+  width: 50%;
+  background: #fff;
+  border-radius: 10px;
+  opacity: 1;
+  left: 0;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .25s ease-in-out;
+  -moz-transition: .25s ease-in-out;
+  -o-transition: .25s ease-in-out;
+  transition: .25s ease-in-out;
+}
+
+#nav-icon3 span:nth-child(2),#nav-icon3 span:nth-child(3) {
+  top: 9px;
+}
+
+#nav-icon3 span:nth-child(4) {
+  top: 18px;
+}
+
+#nav-icon3.open span:nth-child(1) {
+  top: 9px;
+  width: 0%;
+  left: 50%;
+}
+
+#nav-icon3.open span:nth-child(2) {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+#nav-icon3.open span:nth-child(3) {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+#nav-icon3.open span:nth-child(4) {
+  top: 9px;
+  width: 0%;
+  left: 50%;
+}
+
+.imgshdaow{
+  -webkit-filter: drop-shadow(1px 1px 1px #777);
+  filter: drop-shadow(1px 1px 1px #777)
+}
+.contentbox{
+  background:rgba(0,175,219,0.5);
+  border-radius: 7px;
+  margin: 25px auto 0px auto;
+}
+.bgcimg{
+  background-image: url(../img/tripmatchviewgood.png);
+}
+@media (max-width: 768px){
+  .contentbox{
+    border-radius: 0px;
+  }
+  .img280{
+    width: 310px !important;
+    height: 450px !important;
+  }
+  div.col-md-4.mt-4{
+    margin-top: 0px !important;
+    margin-bottom: 10px;
+  }
+}
+.footerli{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    line-height: 40px;
+    text-align: center;
+    overflow: hidden;
+    background-color: rgba(0,0,0,0.2);
+    margin: 5px 1px;
+    font-size: 18px;
+}
+.footerli:hover{
+    opacity: 0.6;
+}
+
+.playbtn{
+  padding: 6px 21px;
+  background-color: #EB0095;
+  color: #fff;
+  border-radius: 15px;
+  font-family: 'Noto Sans TC';
+  font-size: 16px;
+}
+.playbtn_2{
+  padding: 6px 21px;
+  background-color: #EB0095;
+  color: #fff;
+  border-radius: 15px;
+  font-family: 'Noto Sans TC';
+  font-size: 16px;
+}
+.playbtn_3{
+  padding: 6px 21px;
+  background-color: #39B54A;
+  color: #fff;
+  border-radius: 15px;
+  font-family: 'Noto Sans TC';
+  font-size: 16px;
+}
+.mobillist{
+  width: 700px;
+  height: auto;
+  padding: 10px 25px 0px 25px;
+  border-radius: 10px;
+}
+@media (max-width: 425px){
+  .topview_1 {
+  position: relative;
+  background-image: url('https://firebasestorage.googleapis.com/v0/b/tripmatchwebsite.appspot.com/o/img%2Ftripmatch_0515.png?alt=media&token=4572f2e9-d70a-4246-8002-26ced0f41f80');
+  height:670px;
+}
+  div.tripmatchlogo img{
+    left: 15%;
+    top: 21%;
+    width: 300px;
+    height: 300px;
+  }
+  .scrolldown{
+    top: 75%;
+  }
+  .bgcimg{
+    background-position: 16%;
+  }
+  .run0929{
+    width: 85%;
+  }
+  .mobillist ul li h3{
+    font-size: 19px;
+  }
+  .mobillist ul li h4{
+    font-size: 17px;
+  }
+  h3{
+    font-size: 19px;
+  }
+  h4{
+    line-height: 35px;
+    font-size: 17px;
+  }
+  div.container.text-center.mt-5 h4.mt-4{
+    letter-spacing: 9px;
+    font-size: 17px;
+  }
+  h4.mt-5.mb-4.aos-init.aos-animate{
+    letter-spacing: 3px;
+    font-size: 17px;
+  }
+  img .ml-auto .d-block .img280{
+    margin-right: auto !important;
+  }
+}
+@media (max-width: 375px){
+  div.tripmatchlogo img{
+    left: 9%;
+    top: 20%;
+  }
+}
+@media (max-width: 350px){
+  div.tripmatchlogo img{
+    left: 1%;
+    top: 20%;
+  }
+}
+

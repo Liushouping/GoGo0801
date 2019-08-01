@@ -1,0 +1,249 @@
+/*      *{
+        border: 0.1px solid #666;
+      }*/
+      html,body{
+        font-family: 'Noto Sans TC', sans-serif;
+        font-size: 21px;
+      }
+      a , a:active , a:hover , a:visited{
+        text-decoration: none;
+        color: #fff;
+      }
+      a.btn.mr-3.text-white.l3.font-weight-normal:hover{
+        background: #E9433A !important;
+      }
+      .col-lg-6{
+        padding: 0px;
+      }
+      .disabled{
+        opacity: 1 !important;
+      }
+      .text-red{
+        color: #BB272D;
+      }
+      .l5{
+        letter-spacing: 5px;
+      }
+      .l3{
+        letter-spacing: 3px;
+      }
+      .font-weight-normal{
+        font-weight: 500 !important;
+      }
+      .btn{
+        padding: 2px 8px;
+        width: 200px;
+        height: 40px;
+      }
+      .bgc{
+        position: relative;
+        width: 100%;
+        max-height: 1080px;
+        background-image: url(../image/hotel_Banner_1920.1080.png);
+        background-size: cover;
+        background-position: right center;
+        z-index: 0;
+      }
+      li{
+        margin: auto 30px;
+        letter-spacing: 3px;
+      }
+      li > .nav-link{
+        text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5), 1px 0px 5px rgba(0, 0, 0, 0.1), 0px 1px 5px rgba(0, 0, 0, 0.1);
+      }
+      .btn_1:hover{
+        background: #FFE61D;
+        border-radius: 5px;
+      }
+      .btn_2{
+        background: #E9433A;
+        border-radius: 5px;
+        color: yellow !important;
+      }
+      .owl-nav > .owl-prev{
+        font-size: 2rem !important;
+        color: black;
+        position: absolute;
+        left: -7%;
+        top: 42%;
+      }
+      .owl-nav > .owl-next{
+        font-size: 2rem !important;
+        color: black;
+        position: absolute;
+        right: -6.5%;
+        top: 42%;
+      }
+      .fixed_line{
+        position: fixed;
+        right: 20px;
+        bottom: 190px;
+        z-index: 999;
+      }
+      .fixed_top{
+        position: fixed;
+        right: 20px;
+        bottom: 120px;
+        z-index: 999;
+      }
+      .fixed_money{
+        position: fixed;
+        right: 20px;
+        bottom: 20px;
+        z-index: 999;
+        -webkit-animation: myAnimation 2s ease 0s infinite alternate;
+            animation: myAnimation 2s ease 0s infinite alternate;
+      }
+      @keyframes  myAnimation {
+        0% {
+          -webkit-transform: translateY(25px,0px);
+              transform: translateY(25px,0px);
+              opacity:1;
+        } 
+        15% {
+          -webkit-transform: translateY(25px,0px);
+              transform: translateY(25px,0px);
+              opacity:1;
+        } 
+        50% {
+          -webkit-transform: translateY(0px);
+              transform: translateY(0px);
+              opacity:1;
+        }
+        75% {
+          -webkit-transform: translateY(-50px);
+              transform: translateY(-50px);
+              opacity:1;
+        }
+        100% {
+          -webkit-transform: translateY(75px,0px);
+              transform: translateY(75px,0px);
+              opacity:1;
+        }
+      }
+      footer{
+        position: relative;
+        background: #333333;
+        width: 100%;
+        text-align: center;
+      }
+      i {
+        margin: 10px;
+      }
+      .form_width{
+        width: 70%;
+      }
+      .mxw-80{
+        max-width: 80%;
+        padding-left: 0px;
+        padding-right: 0px;
+      }
+      .close{
+        position: absolute;
+        right: 5px;
+        z-index: 999;
+        opacity: 1;
+      }
+      .banner_mobile{
+        margin: 10% auto 0 auto;
+      }
+      input{
+        font-size: 12px !important;
+      }
+      .mediaw{
+        max-width: 50%;
+      }
+      @media only screen and (max-width: 1035px) {
+          h1{
+            font-size: 36px !important;
+          }
+          .banner_mobile{
+            margin: auto;
+          }
+      }
+      @media only screen and (max-width: 504px) {
+          .bgc{
+              background-position: 45% 0%;
+          }
+          .mediaw{
+            max-width: 75% !important;
+          }
+          .mxw-80{
+            max-width: 100%;
+          }
+          h1{
+            font-size: 36px !important;
+          }
+          .media > img{
+            width: 50px;
+            height: 50px;
+          }
+          .media-body > h5{
+            font-size: 21px;
+          }
+          .media-body > span{
+            font-size: 16px;
+          }
+          .l5{
+            letter-spacing: 1px;
+          }
+          html,body{
+            font-size: 14px;
+          }
+          .btn{
+            width: 130px;
+            height: 25px;
+          }
+          .owl-nav > .owl-prev, .owl-nav > .owl-next{
+            top: 40%;
+          }
+          .d-flex .justify-content-center .mt-5 .mb-5 > img{
+            width: 35px;
+            height: 35px;
+          }
+          a > .btn .l3 .font-weight-normal .text-center{
+            height: 25px;
+          }
+          li{
+            margin: auto 15px;
+            font-size: 14px;
+          }
+          p.l3{
+            letter-spacing: 1px !important;
+          }
+          div.morebtn > img{
+            width: 25px !important;
+            height: 25px !important;
+          }
+          div.morebtn > a{
+            width: 175px;
+          }
+          .mobile_btn{
+            font-size: 16px;
+            padding: 0px !important;
+          }
+          .hideenbomile{
+            visibility: hidden !important;
+          }
+          .banner_mobile{
+            margin:0px !important;
+          }
+          .owl-nav > .owl-prev{
+            font-size: 3rem !important;
+            left:-2.5%;
+            top: 42%;
+            color:#fff !important;
+          }
+          .owl-nav > .owl-next{
+            font-size: 3rem !important;
+            right: -3%;
+            top: 42%;
+            color:#fff !important;
+          }
+          .form_width{
+            width: 93%;
+          }
+          .money{
+            padding: 35px;
+            margin: -65px auto;
+          }
