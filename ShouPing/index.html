@@ -1,96 +1,298 @@
+
 <html>
-	<head>
-		<title>作品網站</title>
-		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-		<meta name="viewport" content="width=device-width,maximum-scale=2.0, user-scalable=yes"/>
-		<!-- Bootstrap CSS -->
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
-		<!-- font-family -->
-		<link rel="stylesheet" href="https://fonts.googleapis.com/earlyaccess/notosanstc.css" />
-		<!-- aos -->
-		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-		<!-- animate -->
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css"/>
-		<!-- font-awesome -->
-		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" />
+    <head>
+        <meta charset="UTF-8" >
+        <title>I'm ShouPing</title>
+        <meta http-equiv="x-ua-compatible" content="ie=edge" >
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+        <link rel="stylesheet" href="./style/Normalize.css" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/earlyaccess/notosanstc.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" />
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css" />
+        <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+        <style>
+            /* *{
+                border: 0.1px solid red;
+            } */
+            html,body{
+                font-family: 'Noto Sans TC', '微軟正黑體', sans-serif;
+                font-size: 12px;
+                box-sizing: border-box;
+            }
+            a , a:active , a:hover , a:visited{
+                text-decoration: none;
+                color: initial;
+            }
+            h3{
+                font-size: 2.3rem;
+                letter-spacing: 5px;
+            }
+            h4{
+                font-size: 2rem;
+                letter-spacing: 5px;
+            }
+            h5{
+                font-size: 1.75rem;
+                letter-spacing: 3px;
+            }
+            .banner{
+                position: relative;
+                background: linear-gradient(180deg,#0e2e52,#0e2e52);
+                display: flex;
+                justify-content: center;
+                align-items: center; 
+                width: 100%;
+                height: 720px;
+                z-index: 0;
+            }
+            .card{
+                border-radius: 20px;
+                margin: 35;
+                overflow: hidden;
+                box-shadow: 3px 3px 10px #eee;
+            }
+            .down{
+                position: absolute;
+                left: 50%;
+                top: 85%;
+                animation: scrolltwo 3s linear infinite;
+            }
+            @keyframes scrolltwo {
+                0% {transform: translateY(0);opacity: 1}
+                100% {transform: translateY(35%);opacity: 0}
+            }
+            .title > h1{
+                font-size: 7rem;
+                letter-spacing: 10px;
+                color: white;
+            }
+            .pic{
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center center;
+                /* padding-bottom: 33%; */
+                background-color: #eee;
+            }
+            .detail{
+                height: 125px;
+            }
+            .owl-prev, .owl-next {
+                position: absolute;
+                height: 50px;
+                color: inherit;
+                background: none;
+                border: none;
+                z-index: 100;
+            }
+            i{
+                font-size: 3rem;
+            }
+            .owl-prev {
+                left: 10;
+                top: 180;
+            }
+            .owl-next {
+                right: 10;
+                top: 180;
+            }
+            footer{
+                background: #333;
+            }
+            .top{
+                position: fixed;
+                right: 20px;
+                bottom: 10px;
+                z-index: 99;
+            }
+        </style>
+    <body>
+        <div id="wrap">
+            <!-- 第一區塊 / Banner -->
+            <section class="banner">
+                <div class="title">
+                    <h1>I'm<br>ShouPing</h1>
+                </div>
+                <div class="down d-flex">
+                    <a href="#" id="Go_to_down"><img src="./img/down.svg" class="mx-atuo w-25"></a>
+                </div>
+            </section>
+            <!-- 第二區塊 / 輪播卡片-->
+            <section>
+                <h3 class="text-center font-weight-bold mt-5" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1000">一頁式網頁，響應式尺寸</h3>
+                <h4 class="text-center font-weight-light mb-5" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1000">使用Bootstrap4</h4>
+                <div class="container">
+                    <div class="row">
+                        <div class="owl-carousel" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1000">
+                            <div class="item">
+                                <a href="https://liushouping.github.io/GoGo0801/%E4%BD%8F%E4%B8%80%E6%99%9A%E9%80%81%E6%A9%9F%E8%BB%8A/Gotainan2018.html">
+                                <div class="card">
+                                    <div class="pic" style="background: #8E6740">
+                                        <img src="https://liushouping.github.io/GoGo0801/%E4%BD%8F%E4%B8%80%E6%99%9A%E9%80%81%E6%A9%9F%E8%BB%8A/img/active_pc_3.png" class="w-100 p-5">
+                                    </div>
+                                    <div class="detail p-5 text-center">
+                                        <span class="badge badge-pill badge-danger">活動</span>
+                                        <br>
+                                        <h5>台南住一晚送機車</h5>
+                                    </div>
+                                </div>
+                                </a>
+                            </div>
+                            <div class="item">
+                                <a href="https://liushouping.github.io/GoGo0801/RunningLand%20%E5%A4%A7%E8%82%9A%E5%A4%9C%E8%B7%91%E8%B7%91%E5%8F%8B%E5%84%AA%E6%83%A0/Nightrun.html">
+                                <div class="card">
+                                    <div class="pic" style="background-image: url('https://firebasestorage.googleapis.com/v0/b/tripmatchwebsite.appspot.com/o/img%2Ftripmatch_bottom.png?alt=media&token=37deb39e-1fcd-41ff-adca-df3f0fc5868e');">
+                                        <img src="https://firebasestorage.googleapis.com/v0/b/tripmatchwebsite.appspot.com/o/img%2Ftripmatchlogo_1.png?alt=media&token=9fbae185-f8d1-475e-921f-403cb2281a77" class="w-100 p-5">
+                                    </div>
+                                    <div class="detail p-5 text-center">
+                                        <span class="badge badge-pill badge-danger">活動</span>
+                                        <br>
+                                        <h5>Runningland<br>大肚夜跑優惠</h5>
+                                    </div>
+                                </div>
+                                </a>
+                            </div>
+                            <div class="item">
+                                <a href="https://liushouping.github.io/GoGo0801/2019%20%E7%9B%9B%E4%B8%96%E5%85%AC%E4%B8%BB%E8%99%9F%E8%B1%AA%E8%8F%AF%E9%81%8A%E8%BC%AA/taiwandeparture.html">
+                                <div class="card">
+                                    <div class="pic" style="background: linear-gradient(135deg,#00c6ff 0%,#0072ff 100%)">
+                                        <img src="https://liushouping.github.io/GoGo0801/2019%20%E7%9B%9B%E4%B8%96%E5%85%AC%E4%B8%BB%E8%99%9F%E8%B1%AA%E8%8F%AF%E9%81%8A%E8%BC%AA/image/popup.png" class="w-100">
+                                    </div>
+                                    <div class="detail p-5 text-center">
+                                        <span class="badge badge-pill badge-danger">活動</span>
+                                        <br>
+                                        <h5>2019 盛世公主號<br>豪華郵輪</h5>
+                                    </div>
+                                </div>
+                                </a>
+                                </div>
+                            <div class="item">
+                                <a href="https://liushouping.github.io/GoGo0801/YummyDay%20%E9%A4%90%E5%BB%B3%E5%BB%A3%E5%91%8A%E6%A5%AD%E5%8B%99%E5%90%88%E4%BD%9C/money.html">
+                                <div class="card">
+                                    <div class="pic" style="background-image: url('https://liushouping.github.io/GoGo0801/YummyDay%20%E9%A4%90%E5%BB%B3%E5%BB%A3%E5%91%8A%E6%A5%AD%E5%8B%99%E5%90%88%E4%BD%9C/image/Banner_1920.1080.png');">
+                                        <img src="https://liushouping.github.io/GoGo0801/YummyDay%20%E9%A4%90%E5%BB%B3%E5%BB%A3%E5%91%8A%E6%A5%AD%E5%8B%99%E5%90%88%E4%BD%9C/image/money_all.png" class="w-100 p-5">
+                                    </div>
+                                    <div class="detail p-5 text-center">
+                                        <span class="badge badge-pill badge-danger">活動</span>
+                                        <br>
+                                        <h5>YummyDay<br>餐廳廣告業務</h5>
+                                        </div>
+                                </div>
+                                </a>
+                            </div>
+                            <div class="item">
+                                <a href="https://liushouping.github.io/GoGo0801/%E4%BD%A0%E6%9C%89%E6%95%85%E4%BA%8B%EF%BC%8C%E6%88%91%E6%9C%89%E8%88%9E%E5%8F%B0%20%E5%8F%B0%E7%81%A3%E5%B7%A1%E8%BF%B4%E8%AB%96%E5%A3%87%E8%AC%9B%E5%BA%A7/JerryChen.html">
+                                <div class="card">
+                                    <div class="pic">
+                                        <img src="https://liushouping.github.io/GoGo0801/%E4%BD%A0%E6%9C%89%E6%95%85%E4%BA%8B%EF%BC%8C%E6%88%91%E6%9C%89%E8%88%9E%E5%8F%B0%20%E5%8F%B0%E7%81%A3%E5%B7%A1%E8%BF%B4%E8%AB%96%E5%A3%87%E8%AC%9B%E5%BA%A7/img/head_06.png" class="w-100">
+                                    </div>
+                                    <div class="detail p-5 text-center">
+                                        <span class="badge badge-pill badge-danger">活動</span>
+                                        <br>
+                                        <h5>陳浪巡迴論壇講座</h5>
+                                    </div>
+                                </div>
+                                </a>
+                            </div>
+                            <div class="item">
+                                <a href="https://liushouping.github.io/GoGo0801/%E8%B2%B7%E4%BA%8C%E9%80%81%E4%B8%80%E6%8C%BA%E4%BD%A0%E5%87%BA%E3%80%8C%E8%8A%B1%E3%80%8D%E8%B6%A3/loveHualien.html">
+                                <div class="card">
+                                    <div class="pic">
+                                        <img src="https://firebasestorage.googleapis.com/v0/b/tripmatchwebsite.appspot.com/o/img%2Ftripmatch0311-01.jpg?alt=media&token=f2ad81a1-b9fc-4a73-9f27-0057a35835ce" class="w-100">
+                                    </div>
+                                    <div class="detail p-5 text-center">
+                                        <span class="badge badge-pill badge-danger">活動</span>
+                                        <br>
+                                        <h5>買兩晚送一晚住宿</h5>
+                                    </div>
+                                </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- 間隔 -->
+            <hr class="w-50 text-black-50 mt-5 mb-5">
+            <!-- 第三區塊 / 單純圖片-->
+            <section>
+                    <h3 class="text-center font-weight-bold mt-5" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1000">菜市場早餐小攤販 招牌設計！</h3>
+                    <h4 class="text-center font-weight-bold mb-5" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1000">使用Adobe illustrator</h4>
+                    <div class="container">
+                        <div class="row" data-aos="fade-right">
+                            <img src="./img/a1.png" class="w-100">
+                            <img src="./img/a2.png" class="w-100">
+                            <img src="./img/a3.png" class="w-100">
+                            <img src="./img/a5.png" class="w-100">
+                        </div>
+                    </div>
+            </section>
+            <!-- 尾端 -->
+            <footer class="mt-5 text-white">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 mt-4 font-weight-light mb-3 text-center" style="font-size: 1rem;letter-spacing: 0.5px">
+                            <span class="d-block"></i>by ShouPing</a></span>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <!-- 額外部件 -->
+            <div id="Go_to_top" class="top">
+                <a href="#" id="GO"><img src="./img/up-arrow.svg" width="50px" height="50px"></a>
+            </div>
+            <!-- <div id="GO_to_top" class="top"><a href="#" id="GO"><img src="./img/up-arrow.svg" width="50px" height="50px"></a></div> -->
+        </div>
 
-		<style>
-			html,body{
-				box-sizing: border-box;
-			 	overflow-x: hidden;
-			 	text-align: justify;
-			 	font-family: 'Noto Sans Tc';
-			}
-			a{
-				text-decoration:none !important;
-				margin: 0 !important;
-				padding: 0 !important;
-			}
-			ul{
-				list-style-type: none;    
-				padding: 0px;
-			        margin: 0px;
-				display: table;
-				margin: auto;			
-			}
-			ul li{
-				width: 300px;
-				height: 50px;
-				background: #fff;
-				padding: 15px 20px;
-				margin: 25px;
-				border-radius: 5px;
-				font-size: 16px;
-				font-weight: bold; 
-				color: black;
-				text-align: center;
-			}
-			.bgc{
-				background: url('https://liushouping.github.io/GoGo0801/YummyDay%20%E9%A4%90%E5%BB%B3%E5%BB%A3%E5%91%8A%E6%A5%AD%E5%8B%99%E5%90%88%E4%BD%9C/image/Banner_1920.1080.png');
-				position: relative;
-				background-size: cover;
-				background-repeat: no-repeat;
-				background-position: center;
-				width: 100%;
-				height: 1080px;
-			}
-			.footer{
-				position: absolute;
-				bottom: 7px;
-				left: calc(50% - 135px);
-				color: #663700;
-				font-weight: 500;
-			}
-			@media only screen and (max-width: 1023px) {
-				.footer{
-					font-size:12px;
-				}
-		</style>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" ></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" ></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" ></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+                AOS.init();
 
+                $('#Go_to_down').click(function(){     
+                $('html,body').animate({scrollTop: '500px'}, 1000);    
+                });  
 
-	</head>
+                $(function(){
+                    $('#Go_to_top').click(function(){ 
+                        $('html,body').animate({scrollTop:0}, 333);
+                    });
+                    $(window).scroll(function() {
+                        if ( $(this).scrollTop() > 300 ){
+                            $('#Go_to_top').fadeIn(222);
+                        } else {
+                            $('#Go_to_top').stop().fadeOut(222);
+                        }
+                    }).scroll();
+                });
 
-	<body>
-
-	<div class="container-fluid bgc" id="Gotripmatch">
-		<div>
-			<ul class="pt-5">
-			  <a href="https://liushouping.github.io/GoGo0801/%E4%BD%8F%E4%B8%80%E6%99%9A%E9%80%81%E6%A9%9F%E8%BB%8A/Gotainan2018.html"><li>台南住一晚送機車 活動網頁</li></a>
-			  <a href="https://liushouping.github.io/GoGo0801/RunningLand%20%E5%A4%A7%E8%82%9A%E5%A4%9C%E8%B7%91%E8%B7%91%E5%8F%8B%E5%84%AA%E6%83%A0/Nightrun.html"><li>Runningland 大肚夜跑優惠</li></a>
-			  <a href="https://liushouping.github.io/GoGo0801/2019%20%E7%9B%9B%E4%B8%96%E5%85%AC%E4%B8%BB%E8%99%9F%E8%B1%AA%E8%8F%AF%E9%81%8A%E8%BC%AA/taiwandeparture.html"><li>2019 盛世公主號豪華郵輪</li></a>
-			  <a href="https://liushouping.github.io/GoGo0801/YummyDay%20%E9%A4%90%E5%BB%B3%E5%BB%A3%E5%91%8A%E6%A5%AD%E5%8B%99%E5%90%88%E4%BD%9C/money.html"><li>YummyDay餐廳廣告業務</li></a>
-			  <a href="https://liushouping.github.io/GoGo0801/%E4%BD%A0%E6%9C%89%E6%95%85%E4%BA%8B%EF%BC%8C%E6%88%91%E6%9C%89%E8%88%9E%E5%8F%B0%20%E5%8F%B0%E7%81%A3%E5%B7%A1%E8%BF%B4%E8%AB%96%E5%A3%87%E8%AC%9B%E5%BA%A7/JerryChen.html"><li>陳浪巡迴論壇講座 活動網頁</li></a>
-			  <a href="https://liushouping.github.io/GoGo0801/%E8%B2%B7%E4%BA%8C%E9%80%81%E4%B8%80%E6%8C%BA%E4%BD%A0%E5%87%BA%E3%80%8C%E8%8A%B1%E3%80%8D%E8%B6%A3/loveHualien.html"><li>買兩晚送一晚住宿 活動網頁</li></a>
-			</ul>
-		</div>
-		<footer class="text-center footer">Copyright©2019 , Shou ping . 保留所有權利</footer>		
-	</div>
-
-	<!-- -->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js" ></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" ></script>
-	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-	<!---->
-
-	</body>
-</html>
+                $('.owl-carousel').owlCarousel({
+                    loop:true,
+                    nav:true,
+                    dos:true,
+                    navText: [
+                        "<i class='fas fa-angle-left'></i>",
+                        "<i class='fas fa-angle-right'></i>"
+                    ],
+                    autoplay:false,
+                    autoplayTimeout:3000,
+                    autoplayHoverPause:true,
+                    responsive: {
+                        0: {
+                        items: 1
+                        },
+                        600: {
+                        items: 3
+                        },
+                        1000: {
+                        items: 3
+                        }
+                    }
+                })
+        </script>
+    </body>
+  </html>
